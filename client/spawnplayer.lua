@@ -62,8 +62,8 @@ AddEventHandler('playerSpawned', function()
     CreateThread(function()
         while not LocalPlayer.state.IsInSession do
             Wait(0)
-            DisableControlAction(0, `INPUT_MP_TEXT_CHAT_ALL`, true)
-            DisableControlAction(0, `INPUT_QUICK_USE_ITEM`, true)
+            DisableControlAction(0, "INPUT_MP_TEXT_CHAT_ALL", true)
+            DisableControlAction(0, "INPUT_QUICK_USE_ITEM", true)
         end
     end)
 end)
